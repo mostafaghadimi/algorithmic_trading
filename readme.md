@@ -1,68 +1,33 @@
 <div dir='rtl'>
 
-# کلمات مهم
-
-| کلمه | معنی| 
-| ------------- |:-------------:|
-| promissory notes | سفته |
-| bonds | اوراق قرضه |
-| supply | عرضه |
-| demand | تقاضا |
-| profit | سود |
-| market | بازار |
-| commodity | کالا |
-| ephermal |  زود گذر، کم‌دوام | 
-| inherent | ذاتی |
-| equilibrium‌ |‌ تعادل |
-| intuitively |‌ به‌طور شهودی، بصری | 
-| retail business | تجارت خرده‌فروشی | 
-| asset | دارایی |
-| underlying products | کالاهای اساسی | 
-| equities | سهام |  
-| bid (buy order) | سفارش خرید (پیشنهاد) | 
-| ask (sell order) | سفارش فروش | 
-| broker | دلال |
-| capital | سرمایه | 
-| for the sake of | به‌خاطرِِِِِِِ | 
-| bankruptcy | ورشکستگی | 
+# بخش اول
 
 
+## Market Sectors
 
-
-
-
-<div dir=ltr>
-
-# Market Sectors
-
-</div>
 بخش‌های بازار انواع مختلفی از کالاهای اساسی هستند که قابل معامله هستند.
 
-<div dir=ltr>
+## Asset Classes
 
-# Asset Classes
-
-</div>
  کلاس دارایی انواع مختلفی از وسایل/ابزارهای واقعی است که برای تبادل‌های مختلف در دسترس است.
  
  دو تا معروف‌ترین‌های آن‌ها `options` و `future` هستند.
 
- 1. **future**: قراردادی است که بین خریدار و فروشنده بسته می‌شود و در آن تضمین می‌شود تا یک تاریخ مشخص خریدار، یک مقدار مشخص از کالای تهیه شده توسط خریدار را با قیمت تعیین شده خریداری کند.
+  ۱. **future**: قراردادی است که بین خریدار و فروشنده بسته می‌شود و در آن تضمین می‌شود تا یک تاریخ مشخص خریدار، یک مقدار مشخص از کالای تهیه شده توسط خریدار را با قیمت تعیین شده خریداری کند.
 
-2. **options**: همان future است با این تفاوت که خریدار یا فروشنده می‌توانند قرارداد را لغو کنند. برای این‌که طرفین ضرر زیادی نبینند یک مقدار حداقلی از پول به نام `premium` را در نظر می‌گیرند. (حداقل پولی که برای قرارداد options در نظر گرفته می‌شود.)
+۲. **options**: همان future است با این تفاوت که خریدار یا فروشنده می‌توانند قرارداد را لغو کنند. برای این‌که طرفین ضرر زیادی نبینند یک مقدار حداقلی از پول به نام `premium` را در نظر می‌گیرند. (حداقل پولی که برای قرارداد options در نظر گرفته می‌شود.)
 
 
 ![شکل کلی](img/1.png)
 
-<div dir=ltr>
 
-# Exchange Order Book
 
-</div>
+## Exchange Order Book
+
 همه‌ی درخواست‌های خرید و فروش کاربر در این قسمت نگهداری می‌شود. اطلاعات آن شامل قیمت، تعداد  سهم، نوع سفارش و اطلاعات خریدار است.
 
 
-# انواع سفارش
+## انواع سفارش
 
 1. IOC (Immediate or Close): 
 
@@ -70,7 +35,7 @@
 
 3. Stop orders:
 
-# مدیریت سود و ضرر
+## مدیریت سود و ضرر
 
 به مدیریت سود و ضرر `PnL` یا `Profit and Loss Management` می‌گویند.
 
@@ -96,21 +61,92 @@ $$f(x) = market\: price - position\: price$$
 $$PnL = \Sigma_{s}^{Stocks} (realized\: PnL + unrealized\: PnL) $$
 </div>
 
-<div dir=ltr>
 
-# Trend Following Strategy
-</div>
+## Trend Following Strategy
 
-<div dir=ltr>
 
-# Mean Reversion Strategy
-</div>
+## Mean Reversion Strategy
 
-<div dir=ltr>
 
-# Backtesting
-</div>
+
+
+## Backtesting
+
 
 Backtesting یک مرحله‌ی مهم برای به دست آوردن آماری است که نشان می‌دهد چقدر استراتژی trading کارآمد است.
+
+
+# بخش دوم
+
+
+
+## Trend Indicator
+
+مطالعه‌ بر روی داده‌های تاریخچه‌ی قیمت‌ها باعث می‌شود که اگر قیمت‌ها برای چند روز ثابت در حال افزایش بودند، یک long position جدید ایجاد کنیم. 
+
+
+## Momentum Indicator
+
+
+مطالعه روی قدرت رفتار‌های گذشته است. (درست نفهمیدم)
+
+
+ ## تفاوت Trend و Momentum
+
+
+
+
+
+## Support and Resistance Indicator
+
+
+**Support line:**
+وقتی قیمت‌ها در حال کاهش/ریزش هستند، انتظار داریم در نقطه‌ای این ریزش (به‌خاطر تقاضا) متوقف شود که به آن خط حمایت یا support line گفته می‌شود.
+
+
+**Resistance line:**
+ وقتی قیمت‌ها در حال افزایش هستند، ما به دلیل عرضه‌ی کالاها انتظار داریم تا در نقطه‌ای این روند متوقف شود که به آن خط مقاومت یا resistance line می‌گویند.
+
+
+## روش‌های رایج در تحلیل تکنیکال
+
+1. Simple Moving Average (SMA)
+2. Exponential Moving Average (EMA)
+3. Absolute Price Oscillator (APO)
+4. Moving Average Convergence Divergence (MACD)
+5. Bollinger Bands (BBANDS)
+6. Relative Strength Indicator (RSI)
+7. Standard Deviation (STDEV)
+8. Momentum (MOM)
+
+# کلمات مهم
+
+| کلمه | معنی| 
+| ------------- |:-------------:|
+| promissory notes | سفته |
+| bonds | اوراق قرضه |
+| supply | عرضه |
+| demand | تقاضا |
+| profit | سود |
+| market | بازار |
+| commodity | کالا |
+| ephermal |  زود گذر، کم‌دوام | 
+| inherent | ذاتی |
+| equilibrium‌ |‌ تعادل |
+| intuitively |‌ به‌طور شهودی، بصری | 
+| retail business | تجارت خرده‌فروشی | 
+| asset | دارایی |
+| underlying products | کالاهای اساسی | 
+| equities | سهام |  
+| bid (buy order) | سفارش خرید (پیشنهاد) | 
+| ask (sell order) | سفارش فروش | 
+| broker | دلال |
+| capital | سرمایه | 
+| for the sake of | به‌خاطرِِِِِِِ | 
+| bankruptcy | ورشکستگی | 
+| amend | اصلاح کردن |
+| momentum | تکانه | 
+| indicator | شاخص، اندیکاتور |
+
 </div>
 
