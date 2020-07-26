@@ -81,6 +81,7 @@
 
 **نکته:** Long positionها  زمانی  به سود می‌رسند که قیمت بازار بالاتر از قیمت `postion` باشد. یا به عبارت دیگر تابع $f$ مثبت باشد.
 
+**نکته:** در الگوریتم‌های trading منظور از positions تعدادهای محدود معامله هست؛ زیرا با مدام در حال معامله نیستیم.
 
 <div dir=ltr>
 
@@ -88,6 +89,7 @@ $$f(x) = market\: price - position\: price$$
 </div>
 
 **نکته:** سودهای تحقق نیافته به `long position`هایی می‌گویند که قیمت بازار بالاتر از قیمت postition است اما ما چون سود را نفروخته‌ایم، آن را به عنوان تحقق نیافته در نظر می‌گیریم. (سود بالقوه). در واقع:
+
 
 <div dir=ltr>
 
@@ -104,5 +106,11 @@ $$PnL = \Sigma_{s}^{Stocks} (realized\: PnL + unrealized\: PnL) $$
 # Mean Reversion Strategy
 </div>
 
+<div dir=ltr>
+
+# Backtesting
+</div>
+
+Backtesting یک مرحله‌ی مهم برای به دست آوردن آماری است که نشان می‌دهد چقدر استراتژی trading کارآمد است.
 </div>
 
