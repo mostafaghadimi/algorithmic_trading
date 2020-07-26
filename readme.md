@@ -50,7 +50,7 @@
 
 <div dir=ltr>
 
-$$f(x) = market\: price - position\: price$$
+$$ f(x) = market\: price - position\: price$$
 </div>
 
 **نکته:** سودهای تحقق نیافته به `long position`هایی می‌گویند که قیمت بازار بالاتر از قیمت postition است اما ما چون سود را نفروخته‌ایم، آن را به عنوان تحقق نیافته در نظر می‌گیریم. (سود بالقوه). در واقع:
@@ -58,7 +58,7 @@ $$f(x) = market\: price - position\: price$$
 
 <div dir=ltr>
 
-$$PnL = \Sigma_{s}^{Stocks} (realized\: PnL + unrealized\: PnL) $$
+$$ PnL = \Sigma_{s}^{Stocks} (realized\: PnL + unrealized\: PnL) $$
 </div>
 
 
@@ -110,14 +110,91 @@ Backtesting یک مرحله‌ی مهم برای به دست آوردن آمار
 
 ## روش‌های رایج در تحلیل تکنیکال
 
-1. Simple Moving Average (SMA)
+1. Simple Moving Average (SMA):
+
+<div dir='ltr'>
+
+$$ SimpleMovingAverage = \frac{\Sigma_{i=1}^{N} P_i}{N} $$
+
+</div>
+
 2. Exponential Moving Average (EMA)
+
+<div dir='ltr'>
+
+$$ EMA = (P - EMA_{old} ) \times \mu + EMA_{old} $$
+$$ EMA =  P \times \mu + (1 - \mu) \times EMA_{old} $$
+$$ \mu = \frac{2}{n + 1}$$
+
+</div>
+
 3. Absolute Price Oscillator (APO)
+
+<div dir='ltr'>
+
+$$ AbsolutePriceOscillator = EMA_{fast} - EMA_{slow} $$
+
+</div>
+
 4. Moving Average Convergence Divergence (MACD)
+
+<div dir='ltr'>
+
+$$ MACD = EMA_{fast} - EMA_{slow} $$
+$$ MACD_{signal} = EMA_{MACD} $$
+$$ MACD_{histogram} = MACD - MACD_{signal} $$
+
+
+
+</div>
+
 5. Bollinger Bands (BBANDS)
+
+<div dir='ltr'>
+
+$$ BBANDS_{middle} = SMA_{n-periods}$$
+$$ BBANDS_{upper} = BBANDS_{middle} + (\beta \times \sigma)$$
+$$ BBANDS_{lower} = BBANDS_{middle} - (\beta \times \sigma)$$
+
+$$ \sigma^{2} = \frac{\Sigma_{i=1}^{N}(P_i - SMA) ^ 2}{n} $$
+$$ \sigma = \sqrt \sigma ^ 2 $$
+
+
+
+</div>
+
 6. Relative Strength Indicator (RSI)
+
+<div dir='ltr'>
+
+$$ if \: price > previous \: price: $$
+$$ \rightarrow AbsoluteLossOverPeriod = 0
+, AbsoluteGainOverPeriod =  price - previous\: price$$
+
+
+$$ if \: price < previous \: price: $$
+$$ \rightarrow AbsoluteLossOverPeriod = price - previous\: price
+, AbsoluteGainOverPeriod =  0$$
+
+$$ RS = \frac{ |\frac{\Sigma GainsOverLastNPeriods}{n}}{\frac{ \Sigma LossesOverLastNPeriods}{n}}$$
+
+$$ RSI = 100 - \frac{100}{1 + RS} $$
+
+</div>
+
 7. Standard Deviation (STDEV)
+
+<div dir='ltr'>
+
+$$ \sigma = \sqrt \frac{\Sigma_{i=1}^{n}(P_i - SMA)^2}{n} $$ 
+</div>
+
 8. Momentum (MOM)
+
+<div dir='ltr'>
+
+$$ MOM = Price_t - Price_{t-n}$$ 
+</div>
 
 # کلمات مهم
 
