@@ -223,10 +223,18 @@ $$ MOM = Price_t - Price_{t-n}$$
 | momentum | تکانه | 
 | indicator | شاخص، اندیکاتور |
 | swing | نوسان داشتن |
-| security | سهم | 
+| security | اوراق بهادار | 
 |‌ exchange | داد و ستد، مبادله | 
 | traded | داد و ستد، مبادله |
 | fund | صندوق |
+| ledger | دفتر کل، جایی که تراکنش‌ها در آن ثبت می‌شوند|
+| firm | کارخانه |
+| on behalf of | از طرف |
+|‌ mutual fund | صندوق سرمایه‌گذاری مشترک | 
+| annual | سالانه |
+| dividend | سود سهام | 
+| shareholder | سهام‌دار | 
+
 
 </div>
 
