@@ -194,6 +194,16 @@ $$ \sigma = \sqrt \frac{\Sigma_{i=1}^{n}(P_i - SMA)^2}{n} $$
 $$ MOM = Price_t - Price_{t-n}$$ 
 </div>
 
+# متفرقه
+
+## return 
+
+<div dir='ltr'>
+
+$$ return = \frac{P_2 - P_1 + dividend}{P_1} $$
+</div>
+
+
 # کلمات مهم
 
 | کلمه | معنی| 
@@ -234,6 +244,15 @@ $$ MOM = Price_t - Price_{t-n}$$
 | annual | سالانه |
 | dividend | سود سهام | 
 | shareholder | سهام‌دار | 
+| debt | بدهی |
+| yield | بازده | 
+| OTC (Over The Counter) | فرابورس | 
+| intrinsic | ذاتی |
+| influx | هجوم |
+| liquidity | نقدینگی |
+|‌ disclosure | افشاء |‌
+| NAV (Net Asset Value) | ارزش خالص دارایی |
+
 
 
 </div>
