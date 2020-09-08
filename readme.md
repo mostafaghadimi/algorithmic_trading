@@ -253,7 +253,8 @@ $$ return = \frac{P_2 - P_1 + dividend}{P_1} $$
 |‌ disclosure | افشاء |‌
 | NAV (Net Asset Value) | ارزش خالص دارایی |
 
-
+## لینک‌های کاربردی
+- [توضیح اندیکاتور](https://school.stockcharts.com/doku.php?id=technical_indicators:introduction_to_technical_indicators_and_oscillators#:~:text=An%20oscillator%20is%20an%20indicator,trend%20for%20a%20sustained%20period.)
 
 </div>
 
